@@ -144,8 +144,20 @@ h2 {
     font-family: 'PT Sans', sans-serif;
     width: 580px;
     height: 50px;
-    padding-left: 23px;
+    padding: 0 0 0 23px;
+    margin-left: 180px;
 }
+
+/* .form-group {
+    margin: 0 0 0 200px;
+    width: 580px;
+    
+}
+.form {
+    padding: 0;
+    width: 580px;
+    margin-right: 25px;
+} */
 
 .btn-warning {
     font-family: 'PT Sans', sans-serif;
@@ -153,11 +165,13 @@ h2 {
     font-size: 16px;
     font-weight: 700;
     width: 125px;
-    padding: 15px 0;
+    padding: 14px 0;
     border: 0;
+    margin-left: 25px;
+    height: 50px;
 }
 
-.form {
+/* .form {
     padding: 0 0 0 220px;
     margin-right: px;
     width: 580px;
@@ -178,7 +192,7 @@ h2 {
 }
 
 .col-lg-3 {
-    padding-left: 50px;
+    padding-left: px;
 }
 
 .form__btn {
@@ -193,7 +207,7 @@ h2 {
     padding: 15px 0;
     border: #000;
     
-}
+} */
 
 /* четвертый экран */
 
@@ -211,6 +225,15 @@ h2 {
 }
 
 /* Медиа-запросы */
+@media screen and (max-width:1200px) {
+    .form-control {
+        margin: 0;
+    }
+    .btn-warning {
+        margin: 0;
+        width: 100%;
+    }
+}
 
 @media screen and (max-width:992px) {
     .logo {
@@ -223,8 +246,40 @@ h2 {
     }
     .ofer__text {
         margin: 20px auto;
+        width: auto;
     }
     .icons {
         justify-content: center;
     }
+    .icons__item:nth-child(3) {
+        margin-right: 0;
+    }
+    .form-control {
+        margin: 0;
+        width: 100%;
+    }
+    .btn-warning {
+        margin: 0;
+        width: 100%;
+    }
+    .btn1 {
+        margin-top: 20px;
+    }
+    .title__text {
+        width: auto;
+    }
 }
+
+@media screen and (max-width:576px) {
+    .ipad {
+        width: 100%;
+    }
+    .menu {
+        flex-direction: column;
+    }
+    .menu__item {
+        text-align: center;
+        margin-bottom: 10px;
+    }
+}
+   
